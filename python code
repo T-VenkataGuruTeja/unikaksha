@@ -1,0 +1,1335 @@
+#1.hello world
+
+print("Hello World")
+
+#2.hello world with tab space
+
+print("hello world\thello world")
+
+#3.hello world with new line character
+
+print("hello world\nhello world")
+
+#4.integer input
+
+a=int(input())
+print(a)
+
+#5.float input
+
+a=float(input())
+print("%.2f"%a)
+
+#6.character input
+
+a=input()
+print(a)
+
+#7.string input
+
+a=input()
+print(a)
+
+#8.Ascii-1
+
+a=input()
+print(ord(a))
+
+#9.Ascii-2
+
+a=int(input())
+print(chr(a))
+
+#10.sum and difference
+
+a=int(input("first input: "))
+b=int(input("second input: "))
+print(a+b)
+print(a-b)
+
+#11.product and division
+
+a=int(input())
+b=int(input())
+print(a*b)
+print(a//b)
+print(a%b)
+
+#12.swapping of two numbers
+
+a=int(input())
+b=int(input())
+a,b=b,a
+print(a)
+print(b)#python
+
+#13.swapping without third variable
+
+a=int(input())
+b=int(input())
+a,b=b,a
+print(a)
+print(b)#python
+
+#14.average calculation
+
+a=int(input())
+b=int(input())
+c=int(input())
+d=int(input())
+e=int(input())
+print("%.2f"%((a+b+c+d+e)/5))#python
+
+#15.alice in wonderland
+
+a=input()
+b=len(a)
+a=int(a)
+s=0
+for i in range(0,b):
+    n=a%10
+    s=s+n
+    a=a//10
+print(s)#
+
+#16.area calculation
+
+a=int(input())
+b=int(input())
+c=int(input())
+d=float(input())
+print(a*a)
+print(b*c)
+e=3.14*d*d
+print("%.2f"%e)#python
+
+#17.fencing the ground
+
+a=int(input())
+b=int(input())
+print("Required length is %d m"%(2*(a+b)))
+print("Required quantity of carpet is %d sqm"%(a*b))#python
+
+#18.power of a number
+
+a=int(input())
+b=int(input())
+s=1
+for i in range(b):
+    s=s*a
+print(s)
+
+#19.simple interest
+
+a=int(input())
+b=int(input())
+c=float(input())
+print("%.2f"%((a*b*c)/100))#python
+
+#20.splitting into teams
+
+a=int(input())
+b=int(input())
+print("The number of students in each team is %d and left out is %d"%((a//b),(a%b)))#python
+
+#21.three idiots
+
+a=int(input())
+b=int(input())
+c=int(input())
+d=int(input())
+print("Binoy's house is located at (%.1f,%.1f)"%((a+c)/2,(b+d)/2))#python
+
+#22.greatest of two numbers
+
+a=int(input())
+b=int(input())
+if a==b:
+    print("%d is equal to %d"%(a,b))
+elif a>b:
+    print("%d is greater than %d"%(a,b))
+else:
+    print("%d is less than %d"%(a,b))#python
+
+#23.vowel or consonants
+
+a=input()
+if a in "aeiouAEIOU":
+    print("vowel")
+elif a not in "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ":
+    print("not an alphabet")
+else:
+    print("consonant")#python
+
+#24.grading system
+
+a=int(input())
+if a==100:
+    print("S")
+elif a<100 and a>90:
+    print("A")
+elif a<90 and a>80:
+    print("B")
+elif a<80 and a>70:
+    print("C")
+elif a<70 and a>60:
+    print("D")
+elif a<60 and a>50:
+    print("E")
+elif a<50:
+    print("F")
+else:
+    print("Invalid Input")
+
+#25.profit or loss
+
+a=float(input())
+b=int(input())
+c=a-12*b
+print("Enter the price of a dozen mangoes")
+print("Enter the price at which 1 mango is being sold")
+if c>0:
+    print("LOSS : RS.%.2f"%(c))
+elif c<0:
+    print("PROFIT : RS.%.2f"%(12*b-a))
+else:
+    print("No profit nor loss")
+
+#26.fee collection
+
+a=input()
+if a == "MSDS":
+    tution=int(input())
+    bus = int(input())
+    print("Enter the student type")
+    print("Enter tuition fee")
+    print("Enter bus fee")
+    print("The fees to be paid by the student is Rs.%.2f"%(tution+bus))
+elif a == "MSH":
+    tution=int(input())
+    hostel=int(input())
+    print("Enter the student type")
+    print("Enter tuition fee")
+    print("Enter hostel fee")
+    print("The fees to be paid by the student is Rs.%.2f"%(tution+hostel))
+elif a == "MGSDS":
+    tution=int(input())
+    bus=int(input())
+    print("Enter the student type")
+    print("Enter tuition fee")
+    print("Enter bus fee")
+    print("The fees to be paid by the student is Rs.%.2f"%(1.5*tution+bus))
+elif a == "MGSH":
+    tution=int(input())
+    hostel=int(input())
+    print("Enter the student type")
+    print("Enter tuition fee")
+    print("Enter hostel fee")
+    print("The fees to be paid by the student is Rs.%.2f"%(1.5*tution+hostel))
+else:
+    print("invalid type")
+    #python
+#27.y2k problem detector
+
+print("Enter Year of Birth")
+a=int(input())
+print("Enter Current year")
+b=int(input())
+if b-a > 0:
+    print("Your age is %d"%(b-a))
+else:
+    print("Your age is %d"%(100-(a-b)))
+    #python
+#28.lab allocation
+
+a=int(input())
+b=int(input())
+c=int(input())
+print("Enter x")
+print("Enter y")
+print("Enter z")
+if a<b and a<c:
+    print("L1 has the minimal seating capacity")
+elif b<a and b<c:
+    print("L2 has the minimal seating capacity")
+else:
+    print("L3 has the minimal seating capacity")
+    #python
+#29.gardening 1
+
+a=int(input())
+b=int(input())
+c=int(input())
+if c < b:
+    print("yes")
+elif (c % b) == 0:
+    print("yes")
+elif (c % b) == 1:
+    print("yes")
+else:
+    print("no")
+    #python
+#30.hotel tariff calculator
+
+a=int(input())
+b=int(input())
+c=int(input())
+if a<1 or a>12:
+    print("invalid input")
+elif a==4 or a==5 or a==6 or a==11 or a==12:
+    print("Hotel Tariff: Rs.%.2f"%(1.2*b*c))
+else:
+    print("Hotel Tariff: Rs.%.2f"%(b*c))
+#python
+#31.RGY lights
+
+a=float(input())
+b=float(input())
+c=float(input())
+s=c/b
+if s > a:
+    print("no")
+else:
+    print("yes")
+
+#32.budget
+
+a=int(input())
+b=int(input())
+c=int(input())
+d=int(input())
+e=int(input())
+t=(a*350.34) + (b*230.90) + (c*190.55) + (d*125.30) + (e*180.90)
+if t>15000:
+    print("no")
+else:
+    print("yes")#python
+
+#33.sece dining
+
+a=input()
+b=int(input())
+if a == "front":
+    if b==1:
+        print("Left Handed")
+    else:
+        print("Right Handed")
+else:
+    if b==1:
+        print("Right Handed")
+    else:
+        print("Left Handed")#python
+
+#34.intersection of a circle
+
+import math
+a=int(input())
+b=int(input())
+c=int(input())
+d=int(input())
+e=int(input())
+f=int(input())
+g=math.sqrt(((a-d)**2) + ((b-e)**2))
+if g == (c+f):
+    print("The circles are tangential")
+elif g > (c+f):
+    print("The circles do not overlap")
+else:
+    print("The circles overlap")
+#python
+#35.microwave oven
+
+print("Enter the number of items")
+a=int(input())
+print("Enter the single item heating time")
+b=float(input())
+if a == 1:
+   print("The recommended heating time is %.2f"%b)
+elif a == 2:
+    print("The recommended heating time is %.2f"%(1.5*b))
+elif a == 3:
+    print("The recommended heating time is %.2f"%(2*b))
+else:
+    print("Number of items is more")
+#python
+#36.amoeba multiplication
+
+a=int(input())
+s=0
+b=0
+c=1
+print("Enter the number of months: ")
+if a==1:
+    print("The amoeba size is 0")
+elif a==2:
+    print("The amoeba size is 1")
+else:
+    for i in range(a-2):
+        s=b+c
+        b=c
+        c=s
+    print("The amoeba size is %d"%s)
+
+#37.factorial
+
+a=int(input())
+s=1
+flag = 0
+for i in range(1,a+1):
+    s=s*i
+    if a == s:
+        flag = 1
+        break
+if flag == 1:
+    print("yes")
+else:
+    print("no")
+
+#38.sum of digits
+
+a=input()
+b=len(a)
+a=int(a)
+s=0
+for i in range(b):
+    s=s+a%10
+    a=a//10
+print(s)#python
+
+#39.friendly Pair
+
+a=int(input())
+b=int(input())
+c=0
+d=0
+for i in range(1,a+1):
+    if (a%i)==0:
+        c=c+i
+c=c/a
+for i in range(1,b+1):
+    if (b%i)==0:
+        d=d+i
+d=d/b
+if d==c:
+    print("Friendly Pair")
+else:
+    print("Not Friendly Pair")
+
+#40.harshad number
+
+a=input()
+b=len(a)
+a=int(a)
+c=a
+s=0
+for i in range(b):
+    s=s+a%10
+    a=a//10
+if (c%s) == 0:
+    print("Harshad Number")
+else:
+    print("not harshad number")
+
+#41.lcm of two numbers
+
+a=int(input())
+b=int(input())
+c=a*b
+for i in range(1,c+1):
+    if ((i%a)==0) and ((i%b)==0):
+        break
+print("LCM of %d and %d is %d"%(a,b,i))
+
+#42.palindrome of a number
+
+a=int(input())
+n=0
+s=a
+b=0
+while a!=0:
+    n=a%10
+    b=b*10+n
+    a=a//10
+if b==s:
+    print("palindrome")
+else:
+    print("not a palindrome")
+
+#43.perfect number
+
+a=int(input())
+s=0
+for i in range(1,a+1):
+    if a%i == 0:
+        s=s+i
+if s== a:
+    print("perfect number")
+else:
+    print("not a perfect number")#python
+
+#44.prime number
+
+a=int(input())
+flag=0
+for i in range(1,a):
+    if a%i == 0:
+        flag=flag+1
+if flag == 1:
+    print("prime number")
+else:
+    print("not a prime")#python
+
+#45.prime numbers in a range
+
+a=int(input())
+b=int(input())
+for i in range(a,b+1):
+    flag=0
+    for k in range(1,i+1):
+        if i%k == 0:
+            flag = flag+1
+    if flag == 2:
+        print(i)
+
+#46.reverse a number
+
+a=int(input())
+s=0
+while a!=0:
+    b=a%10
+    s=s*10+b
+    a=a//10
+print(s)#python
+
+#47.strong number
+
+a=int(input())
+s=1
+c=0
+t=a
+while a!=0:
+    b=a%10
+    for i in range(1,b+1):
+        s=s*i
+    c=c+s
+    s=1
+    a=a//10
+if c == t:
+    print("strong number")
+else:
+    print("not a strong number")
+
+#48.sum of natural numbers
+
+a=int(input())
+s=0
+for i in range(1,a+1):
+    s=s+i
+print(s)
+
+#49.sum of natural numbers in a range
+
+a=int(input())
+b=int(input())
+s=0
+for i in range(a,b+1):
+    s=s+i
+print(s)
+
+#series////////////////////////////////////////////////////
+a=int(input())
+for i in range(1,a+1):
+    print(i**2,end=' ')
+#python
+a=int(input())
+c=6
+for i in range(0,a):
+    b=5*i
+    c=c+b
+    print(c,end=' ')
+#python
+a=int(input())
+for i in range(1,a+1):
+    print(3**i,end=' ')
+#python
+a=int(input())
+s=0.5
+print(s,end=' ')
+for i in range(a-1):
+    b=3**i
+    s=s+b
+    print(s,end=' ')
+#python
+a=int(input())
+s=11
+for i in range(a):
+    print(s*s,end=' ')
+    s=s+4
+#python
+a=int(input())
+print("0 2",end=" ")
+s=6
+b=2
+for i in range(a):
+    flag=0
+    if i%2 == 1:
+        flag=1
+    b=b+s
+    print(b,end=' ')
+    if flag==1:
+        s=s+4
+#python
+a=int(input())
+s=1
+print(s,end=" ")
+k=0
+b=1
+for i in range(a):#1 2 3 4
+    flag = 0
+    s = s + b#2 3 6 9
+    print("%.1f"%s,end=" ")
+    if i%2 == 1:#0 1 0 1
+        flag = 1
+        k=k+1#0 1 1 2
+    if flag==1:
+        b=3**k
+#python
+a=int(input())
+s=4
+print(s,end=" ")
+for i in range(1,a):
+    b=i**2
+    s=s+b
+    print(s,end=" ")
+#python
+a=int(input())
+s=2
+print(s,end=" ")
+for i in range(a):
+    s=(s**2)-1
+    print(s,end=" ")
+#python
+a=int(input())
+s=95
+print("%.1f"%s,end=" ")
+b=20.5
+for i in range(a-1):
+    s=s+b
+    b=b+2
+    print(s,end=" ")
+#python
+#//////////////////////////////////////////////////////////
+#pattern///////////////////////////////////////////////////
+a=int(input())
+for i in range(a):
+    for k in range(a):
+        print("*",end="")
+    print()
+#python
+a=int(input())
+for i in range(a):
+    for k in range(a):
+        print(i+1,end="")
+    print()
+#python
+a=int(input())
+for i in range(1,a+1):
+    for j in range(1,i+1):
+        print('*',end='')
+    print()
+#python
+a=int(input())
+for i in range(a):
+    for k in range(a-i):
+        print("*",end="")
+    print()
+#python
+a=int(input())
+for i in range(1,a+1):
+    for k in range(a-i):
+        print(" ",end="")
+    for k in range(i):
+        print("*",end="")
+    for k in range(i-1):
+        print("*",end="")
+    print()
+#python
+a=int(input())
+for i in range(a):
+    for k in range(i):
+        print(" ",end="")
+    for k in range(a-i):
+        print("*",end="")
+    for k in range(a-i-1):
+        print("*",end="")
+    print()
+#python
+n=int(input())
+for i in range(1,n+1):
+    for j in range(1,n+1):
+        if i==1 or i==n or j==n or j==1:
+            print("*",end="")
+        else:
+            print(" ",end="")
+    print()
+#python
+a=int(input())
+for i in range(1,a+1):
+    for k in range(a-i):
+        print(" ",end="")
+    for k in range(i):
+        print("*",end="")
+    for k in range(i-1):
+        print("*",end="")
+    print()
+#python
+a=int(input())
+for i in range(a):
+    for k in range(i):
+        print(" ",end='')
+    for k in range(a-i):
+        print("*",end='')
+    for k in range(i):
+        print("*",end='')
+    print()
+#python
+a=int(input())
+for i in range(a):
+    for k in range(a-i):
+        print(" ",end="")
+    for k in range(i):
+        print("*",end="")
+    for k in range(i-1):
+        print("*",end="")
+    print()
+for i in range(a):
+    for k in range(i):
+        print(" ",end="")
+    for k in range(a-i):
+        print("*",end="")
+    for k in range(a-i-1):
+        print("*",end="")
+    print()
+#python
+#/////////////////////////////////////////////////////////
+#50.arithmetic operators
+
+def arithmatic(a,b):
+    print(a+b)
+    print(a-b)
+    print(a*b)
+    print(a/b)
+    print(a//b)
+    print(a%b)
+c=int(input())
+d=int(input())
+arithmatic(c,d)
+
+#51.square
+
+def squr(a):
+    print(a**2)
+c=int(input())
+squr(c)#python
+
+#52.cube
+
+def cube(a):
+    print(a**3)
+c=int(input())
+cube(c)
+
+#53.binary equivalent of a number using recursion
+
+def binary(a,l):
+    b=a%2
+    l.append(b)
+    a=a//2
+    if a == 2:
+        l.append(0)
+        l.append(1)
+        c=l[::-1]
+        k=""
+        for i in range(len(c)):
+            k=k+str(c[i])
+        return print(k)
+    else:
+        binary(a,l)
+a=int(input())
+l=[]
+binary(a,l)
+
+#54.fibonacci series
+
+def fib(a,b,c,d):
+    s=a+b
+    a=b
+    b=s
+    print(s,end=" ")
+    d=d+1
+    if d==c:
+        return
+    else:
+        fib(a,b,c,d)
+c=int(input())
+d=0
+fib(-1,1,c,d)
+
+#55.odd or even
+
+def odd_or_even(a):
+    if a==0:
+        return print("even")
+    elif a==1:
+        return print("odd")
+    else:
+        odd_or_even(a-2)
+a=int(input())
+odd_or_even(a)
+
+#56.factorial
+
+def fact(a):
+    if a==1 or a==0:
+        return 1
+    else:
+        return a*fact(a-1)
+a=int(input())
+print(fact(a))
+
+#57.lcm of two numbers
+
+def lcm(a,b,c):
+    if (c%a==0 and c%b==0):
+        return print(c)
+    elif c < a*b:
+        lcm(a,b,c+1)
+    else:
+        return print(a*b)
+a=int(input())
+b=int(input())
+lcm(a,b,1)
+
+#58.decimal to binary
+
+def binary(a,l):
+    l.append(a%2)
+    a=a//2
+    if a == 2:
+        l.append(0)
+        l.append(1)
+        c=l[::-1]
+        k=""
+        for i in c:
+            k=k+str(i)
+        return print(k)
+    else:
+        binary(a,l)
+a=int(input())
+l=[]
+binary(a,l)
+
+#59.create a list
+
+a=int(input())
+l=[]
+for i in range(a):
+    temp=input()
+    l.append(temp)
+for i in range(a):
+    print(l[i])
+
+#60.largest number in a list
+
+a=int(input())
+l=[]
+for i in range(a):
+    temp = int(input())
+    l.append(temp)
+max = l[0]
+for k in range(0,a):
+    if max <= l[k]:
+        max=l[k]
+print(max)
+
+#61.odd or even
+
+a=int(input())
+l=[]
+o=[]
+e=[]
+for i in range(a):
+    temp = int(input())
+    l.append(temp)
+for i in range(a):
+    if l[i]%2 == 0:
+        e.append(l[i])
+    else:
+        o.append(l[i])
+print("The even list",e)
+print("The odd list",o)
+
+#62.array mean
+
+a=int(input())
+l=[]
+for i in range(a):
+    temp = int(input())
+    l.append(temp)
+s=0
+
+for i in range(a):
+    s=s+l[i]
+print("%.1f"%(s/a))
+
+#63.sort the list
+
+a=int(input())
+l=[]
+for i in range(a):
+    temp = int(input())
+    l.append(temp)
+b=int(input())
+for i in range(b):
+    temp = int(input())
+    l.append(temp)
+for i in range(a+b):
+    for k in range(a+b-1):
+        if l[k] >= l[k+1]:
+            l[k],l[k+1] = l[k+1],l[k]
+print("Sorted list is: ",l)
+
+#64.remove duplicates
+
+a=int(input())
+l=[]
+c=[]
+for i in range(a):
+    temp = int(input())
+    l.append(temp)
+for i in l:
+    if i not in c:
+        c.append(i)
+print(c)
+
+#65.second largest number
+
+a=int(input())
+l=[]
+for i in range(a):
+    temp=int(input())
+    l.append(temp)
+for i in range(a):
+    for k in range(a-1):
+        if l[k]>=l[k+1]:
+            l[k],l[k+1]=l[k+1],l[k]
+print(l[-2])
+
+#66.swap the number
+
+a=int(input())
+l=[]
+for i in range(a):
+    temp = int(input())
+    l.append(temp)
+for i in range(0,a//2,2):
+    l[i],l[-i-1]=l[-i-1],l[i]
+print(l)
+
+#67.check key exist
+
+dist = {'A':1,'B':2,'C':3}
+a=input()
+print("Enter key to check")
+if a in dist.keys():
+    print("Key is present and value of the key is: ")
+    print(dist[a])
+else:
+    print("Key isn't present!")
+#python
+
+#68.concatenate
+
+dist={'A':1,'B':2}
+dist1={'C':3}
+dist.update(dist1)
+print("concatenated dictionary is:")
+print(dist)
+
+#69.expression in (x,x*x)
+
+dist={}
+a=int(input())
+for i in range(1,a+1):
+    dist[i]=i*i
+print(dist)
+
+#70.key value pair
+
+a=int(input())
+b=int(input())
+dist={}
+dist[a]=b
+print("Enter the key (int) to be added:")
+print("Enter the value for the key to be added:")
+print("updated dictionary is:")
+print(dist)#python
+
+#71.sum of all items
+
+dist={'A':100,'B':540,'C':239}
+s=0
+for i in dist.keys():
+    s=s+dist[i]
+print("Total sum of values in the dictionary:")
+print(s)#python
+
+#72.map a dictionary
+
+a=int(input())
+k=[]
+v=[]
+dist={}
+for i in range(a):
+    temp = int(input())
+    k.append(temp)
+for i in range(a):
+    temp = int(input())
+    v.append(temp)
+for i in range(a):
+    dist[k[i]] = v[i]
+print("Enter number of elements for dictionary:")
+print("For keys:")
+print("For values:")
+print("The dictionary is:")
+print(dist)
+
+#73.add an item
+
+a=(4,6,2,8,3,1)
+print(a)
+b=(9,)
+print(a+b)
+t= a[:5] + (15,20,25) + a[:5]
+print(t)
+t=list(t)
+t.append(30)
+print(tuple(t))
+
+#74.length of a tuple
+
+a=input()
+l=[]
+for i in a:
+    l.append(i)
+print(tuple(l))
+print(len(l))
+
+#75.reverse a tuple
+
+a=input()
+l=[]
+for i in a:
+    l.append(i)
+print(tuple(l[::-1]))#python
+
+#76.repeated element in a tuple
+
+t=(2,4,5,6,2,3,4,4,7)
+a=int(input())
+print(t)
+if a in t:
+    print(t.count(a))
+
+#77.upper case and lower case
+
+a=input()
+s=t=0
+for i in a:
+    if i in "abcdefghijklmnopqrstuvwxyz":
+        s=s+1
+    elif i in "ABCDEFGHIJKLMNOPQRSTUVWXYZ":
+        t=t+1
+print(t)
+print(s)
+#python
+
+#78.count the word and character
+
+a=input()
+s=0
+t=1
+for i in range(len(a)):
+    if a[i] != " ":
+        s=s+1
+    else:
+        t=t+1
+        s=s+1
+print(t)
+print(s)
+
+#79.number of digits and letters in a string
+
+a = input()
+s=0
+t=0
+for i in range(len(a)):
+    if a[i] in "0123456789":
+        s=s+1
+    else:
+        t=t+1
+print("Characters = ",t)
+print("digits = ",4)
+
+#80.characters in ascending order
+
+a=input()
+l=[]
+for i in a:
+    l.append(i)
+for i in range(len(a)):
+    for k in range(len(a)-1):
+        if l[k]>l[k+1]:
+            l[k],l[k+1]=l[k+1],l[k]
+k=""
+for i in range(len(a)):
+    k=k+l[i]
+print(k)#python
+
+#81.form a new string
+
+a=input()
+k=a[0]+a[1]+a[-2]+a[-1]
+print(k)
+
+#82.remove the nth index
+
+a=input()
+b=int(input())
+l=[]
+for i in a:
+    l.append(i)
+l.pop(b)
+k=" "
+for i in l:
+    k=k+i
+print(k)
+
+#83.replace all occurrences
+
+a=input()
+b=input()
+c=input()
+l=[]
+for i in a:
+    l.append(i)
+d=l.index(b)
+l.pop(d)
+l.insert(d,c)
+k=" "
+for i in l:
+    k=k+i
+print("modified string: ")
+print(k)
+
+#84.remove the nth index character
+
+a=input()
+b=int(input())
+l=[]
+for i in a:
+    l.append(i)
+l.pop(b)
+k=" "
+for i in l:
+    k=k+i
+print(k)
+#python
+
+#85.robot pathway
+
+from math import *
+l=[]
+c=[]
+x=[]
+y=[]
+z=False
+while z == False:
+    a=input()
+    if a=="STOP":
+        z= True
+    else:
+        i,k = a.split()
+        l.append(i)
+        c.append(int(k))
+n=len(c)
+for i in range(n):
+    if l[i] == "DOWN":
+        y.append(int(0-c[i]))
+    elif l[i]== "UP":
+        y.append(int(c[i]))
+    elif l[i]== "RIGHT":
+        x.append(int(c[i]))
+    elif l[i]=="LEFT":
+        x.append(int(0-c[i]))
+X=0
+Y=0
+for i in x:
+    X=X+i
+for i in y:
+    Y=Y+i
+d=sqrt(X*X + Y*Y)
+print(round(d))
+
+#86.password verification
+
+a=input()
+pwd = a.split(",")
+l=[]
+for i in range(len(pwd)):
+    l.append(1)
+for i in range(len(pwd)):
+    if len(pwd[i]) < 6 or len(pwd[i]) > 12:
+        l[i]=0
+for i in range(len(pwd)):
+    flag = 0
+    for k in pwd[i]:
+        if k >= 'a' and k <= 'z':
+            flag = 1
+            break
+    if flag == 0:
+        l[i] = 0
+for i in range(len(pwd)):
+    flag = 0
+    for k in pwd[i]:
+        if k >= 'A' and k <= 'Z':
+            flag = 1
+            break
+    if flag == 0:
+        l[i] = 0
+for i in range(len(pwd)):
+    flag = 0
+    for k in pwd[i]:
+        if k >= '0' and k <= '9':
+            flag = 1
+            break
+    if flag == 0:
+        l[i]=0
+for i in range(len(pwd)):
+    flag = 0
+    for k in pwd[i]:
+        if k in "$#@":
+            flag = 1
+            break
+    if flag == 0:
+        l[i] = 0
+valid_pwd=[]
+for i in range(len(pwd)):
+    if l[i] != 0:
+        valid_pwd.append(pwd[i])
+if len(valid_pwd) == 0:
+    print("No password matches the condition")
+else:
+     print(",".join(valid_pwd))
+
+#87.spiral pattern
+
+a=int(input())
+for i in range(1,a+1):
+    for k in range(i):
+        print(a-k,end="")
+    for k in range(a-i):
+        print(a-i+1,end="")
+    for k in range(a-i):
+        print(a-i+1,end="")
+    for k in range(i-1,0,-1):
+        print(a-k+1,end="")
+    print()
+for i in range(2,a+1):
+    for k in range(a-i+1):
+        print(a-k,end="")
+    for k in range(i-1):
+        print(i,end="")
+    for k in range(i-1):
+        print(i,end="")
+    for k in range(a-i,0,-1):
+        print(a-k+1,end="")
+    print()
+
+#88.cryptography
+
+a=int(input())
+l=[]
+for i in range(a):
+    temp = input()
+    l.append(temp)
+for i in l:
+    c=len(i)
+    b=c//2
+    str = ""
+    for k in range(c):
+        if k > c//2:
+            s=ord(i[k])+b-k
+            str = str +chr(s)
+        elif k<= c//2:
+            s=ord(i[k])+k-b
+            if s < 97 :
+                s=s+26
+            str = str + chr(s)
+    print(str)#python
+#####################################################################################
+#####################################################################################
+#angular velocity
+
+from math import *
+v1=int(input())
+r1=int(input())
+v2=int(input())
+r2=int(input())
+n=int(input())
+x=[]
+y=[]
+x.append(cos(v1*n*(3.14/180))*r1)
+y.append(sin(v1*n*(3.14/180))*r1)
+x.append(cos(v2*n*(3.14/180))*r2)
+y.append(sin(v2*n*(3.14/180))*r2)
+X=abs(x[0]-x[1])
+Y=abs(y[0]-y[1])
+if r1 == r2:
+    print("Invalid Input")
+else:
+    print("%.2f"%(sqrt(X**2 + Y**2)))
+
+#annual book fair
+
+def prize(N,k):
+    l=[]
+    for i in range(N):
+        temp = int(input())
+        if temp < 1000 and temp > 0:
+            l.append(temp)
+    s=0
+    for i in range(0,N,k+1):
+        s=s+l[i]
+    return print(s)
+
+N,k=map(int,input().split(","))
+if N < 50 and k >= 0 and N > 0:
+    prize(N,k)
+
+#power of digits
+
+def prize(N,k):
+    l=[]
+    for i in range(N):
+        temp = int(input())
+        if temp < 1000 and temp > 0:
+            l.append(temp)
+    s=0
+    for i in range(0,N,k+1):
+        s=s+l[i]
+    return print(s)
+
+N,k=map(int,input().split(","))
+if N < 50 and k >= 0 and N > 0:
+    prize(N,k)
